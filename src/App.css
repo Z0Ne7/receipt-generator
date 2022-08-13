@@ -1,0 +1,69 @@
+.App {
+  padding: 10px;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.self-center {
+  align-self: center;
+}
+.product-management {
+  border-bottom: 1px solid #dadada;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  width: 80%;
+}
+td {
+  text-align: center;
+}
+.product-management {
+  gap: 50px;
+}
+.tool-page {
+  gap: 20px;
+}
+.result-page .footer .note,
+.result-page .footer .price-in-text {
+  font-style: italic;
+}
+.result-page .footer .price-in-text {
+  font-weight: bold;
+}
+.result-page .footer {
+  gap: 20px;
+}
+.result-page .header,
+.result-page .title {
+  color: #0076bb;
+}
+.result-page .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.result-page {
+  gap: 35px;
+}
+.add-product-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.add-product-table .input-item {
+  display: flex;
+  gap: 10px;
+}
