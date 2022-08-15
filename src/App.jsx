@@ -9,7 +9,7 @@ function App() {
   const [customerPhone, setCustomerPhone] = useState(getItem("customerPhone") || "");
   const [customerAddress, setCustomerAddress] = useState(getItem("customerAddress") || "");
   const [productName, setProductName] = useState("");
-  const [unit, setUnit] = useState("");
+  const [unit, setUnit] = useState("Chiếc");
   const [quantity, setQuantity] = useState("");
   const [price, setPrice] = useState("");
   const [selectedProduct, setSelectedProduct] = useState("0");
@@ -235,7 +235,9 @@ function App() {
           <div className="product-list">
             {productList?.map((item, i) => (
               <div className="flex" key={i}>
-                <div>{item.name}</div>
+                <span style={{ maxWidth: "200px", overflow: "hidden", textOverflow: "ellipsis" }}>
+                  {item.name}
+                </span>
                 <button onClick={() => handleDeleteProduct(item.id)}>Delete</button>
               </div>
             ))}
@@ -249,6 +251,7 @@ function App() {
                 name="productList"
                 onChange={(e) => setSelectedProduct(e.target.value)}
                 value={selectedProduct}
+                style={{maxWidth: "150px"}}
               >
                 <option value="0" disabled>
                   Chọn sản phẩm
