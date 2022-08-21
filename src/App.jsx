@@ -66,7 +66,6 @@ function App() {
       setItem("productListTable", JSON.stringify(currentListArr));
     }
     setSelectedProduct("0");
-    setUnit("");
     setQuantity("");
     setPrice("");
   };
