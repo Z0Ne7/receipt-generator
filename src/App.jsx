@@ -168,7 +168,7 @@ function App() {
           </div>
           <div className="note flex flex-col">
             <span>Ghi chú: Giá chưa bao gồm phí vận chuyển</span>
-            <span>- Bánh thêm trứng muối +5k/1 bánh</span>
+            <span>- Bánh thêm trứng muối +7k/1 bánh</span>
             <span>- Khách hàng vui lòng đặt cọc 50% đơn hàng</span>
             <span>- Thời gian đặt hàng 20 ngày kể từ ngày khách hàng đặt cọc</span>
           </div>
